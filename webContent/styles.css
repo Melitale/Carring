@@ -1,0 +1,13 @@
+body{
+  background-color : #C0ECFA;
+}
+
+div{
+  background-color : #FFF;
+}
+
+div.container{
+  height : 800px;
+  border-left : 1px solid grey;
+  border-right : 1px solid grey;
+}
