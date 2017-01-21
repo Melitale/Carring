@@ -19,22 +19,22 @@ var HomeTableComponent = (function () {
         console.log("coming in");
         this.carService.getCarsFromServer().then(function (cars) {
             _this.cars = cars;
-            console.log(_this.cars);
+            console.log(cars);
         });
     };
     HomeTableComponent.prototype.ngOnInit = function () {
         this.getCars();
     };
-    HomeTableComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: "home-table",
-            templateUrl: "./home.table.component.html",
-            providers: [car_service_1.CarService]
-        }), 
-        __metadata('design:paramtypes', [car_service_1.CarService])
-    ], HomeTableComponent);
     return HomeTableComponent;
 }());
+HomeTableComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: "home-table",
+        templateUrl: "./home.table.component.html",
+        providers: [car_service_1.CarService]
+    }),
+    __metadata("design:paramtypes", [car_service_1.CarService])
+], HomeTableComponent);
 exports.HomeTableComponent = HomeTableComponent;
 //# sourceMappingURL=home.table.component.js.map

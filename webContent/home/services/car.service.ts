@@ -12,7 +12,7 @@ export class CarService{
 
     constructor(private http : Http){}
 
-    private getCarsPath = 'http://localhost:8080/carring.jaxb/api/car';
+    private getCarsPath = 'http://localhost:8080/rest/api/car/all';
 
     getCars() : Promise<Car[]>{
         return Promise.resolve(CARS);
@@ -22,7 +22,7 @@ export class CarService{
         console.log("coming in");
         return this.http.get(this.getCarsPath)
             .toPromise()
-            .then(response => response.json().cars as Car[])
+            .then(response => response.json() as Car[])
             .catch(this.handleError);
     }
 

@@ -15,7 +15,7 @@ var car_mocks_1 = require("../mocks/car-mocks");
 var CarService = (function () {
     function CarService(http) {
         this.http = http;
-        this.getCarsPath = 'http://localhost:8080/carring.jaxb/api/car';
+        this.getCarsPath = 'http://localhost:8080/rest/api/car/all';
     }
     CarService.prototype.getCars = function () {
         return Promise.resolve(car_mocks_1.CARS);
@@ -24,18 +24,18 @@ var CarService = (function () {
         console.log("coming in");
         return this.http.get(this.getCarsPath)
             .toPromise()
-            .then(function (response) { return response.json().cars; })
+            .then(function (response) { return response.json(); })
             .catch(this.handleError);
     };
     CarService.prototype.handleError = function (error) {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
     };
-    CarService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], CarService);
     return CarService;
 }());
+CarService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http])
+], CarService);
 exports.CarService = CarService;
 //# sourceMappingURL=car.service.js.map
