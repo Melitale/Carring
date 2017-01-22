@@ -1,4 +1,4 @@
-/webContent/node_modules/
+/webContent/node_modules
 *target*
 *.jar
 *.war

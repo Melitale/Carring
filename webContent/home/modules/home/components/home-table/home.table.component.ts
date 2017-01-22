@@ -18,7 +18,7 @@ export class HomeTableComponent implements OnInit{
 
     getCars() : void {
         console.log("coming in");
-        this.carService.getCarsFromServer().then(
+        this.carService.getCars().then(
             cars => {
                 this.cars = cars;
                 console.log(cars);

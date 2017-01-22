@@ -11,16 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/toPromise");
-var car_mocks_1 = require("../mocks/car-mocks");
 var CarService = (function () {
     function CarService(http) {
         this.http = http;
         this.getCarsPath = 'http://localhost:8080/rest/api/car/all';
     }
     CarService.prototype.getCars = function () {
-        return Promise.resolve(car_mocks_1.CARS);
-    };
-    CarService.prototype.getCarsFromServer = function () {
         console.log("coming in");
         return this.http.get(this.getCarsPath)
             .toPromise()

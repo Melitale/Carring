@@ -10,9 +10,11 @@ var car_service_1 = require("../../services/car.service");
 var platform_browser_1 = require("@angular/platform-browser");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
 var http_1 = require("@angular/http");
+var forms_1 = require("@angular/forms");
 var home_component_1 = require("./components/home/home.component");
 var home_navbar_component_1 = require("./components/home-navbar/home.navbar.component");
 var home_table_component_1 = require("./components/home-table/home.table.component");
+var home_searcher_component_1 = require("./components/home-searcher/home.searcher.component");
 var HomeModule = (function () {
     function HomeModule() {
     }
@@ -23,12 +25,16 @@ HomeModule = __decorate([
         imports: [
             platform_browser_1.BrowserModule,
             ng_bootstrap_1.NgbModule.forRoot(),
-            http_1.HttpModule
+            http_1.HttpModule,
+            http_1.JsonpModule,
+            forms_1.FormsModule,
+            forms_1.ReactiveFormsModule
         ],
         declarations: [
             home_component_1.HomeComponent,
             home_navbar_component_1.HomeNavbarComponent,
-            home_table_component_1.HomeTableComponent
+            home_table_component_1.HomeTableComponent,
+            home_searcher_component_1.HomeSearcherComponent
         ],
         providers: [car_service_1.CarService],
         bootstrap: [home_component_1.HomeComponent]
