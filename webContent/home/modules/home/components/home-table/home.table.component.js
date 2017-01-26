@@ -16,7 +16,6 @@ var HomeTableComponent = (function () {
     }
     HomeTableComponent.prototype.getCars = function () {
         var _this = this;
-        console.log("coming in");
         this.carService.getAllCars().then(function (cars) {
             _this.cars = cars;
             console.log(cars);

@@ -10,3 +10,7 @@ div.container {
     border-left: 1px solid grey;
     border-right: 1px solid grey;
 }
+
+div.text-center {
+    text-align: center;
+}
