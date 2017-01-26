@@ -8,6 +8,7 @@ import { CarService } from "../../../../services/car.service";
     moduleId : module.id,
     selector : "home-table",
     templateUrl : "./home.table.component.html",
+    styleUrls: ["./home.table.component.css"],
     providers: [CarService]
 })
 
@@ -18,7 +19,7 @@ export class HomeTableComponent implements OnInit{
 
     getCars() : void {
         console.log("coming in");
-        this.carService.getCarsFromServer().then(
+        this.carService.getAllCars().then(
             cars => {
                 this.cars = cars;
                 console.log(cars);

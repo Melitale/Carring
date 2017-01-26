@@ -17,7 +17,7 @@ var HomeTableComponent = (function () {
     HomeTableComponent.prototype.getCars = function () {
         var _this = this;
         console.log("coming in");
-        this.carService.getCarsFromServer().then(function (cars) {
+        this.carService.getAllCars().then(function (cars) {
             _this.cars = cars;
             console.log(cars);
         });
@@ -32,6 +32,7 @@ HomeTableComponent = __decorate([
         moduleId: module.id,
         selector: "home-table",
         templateUrl: "./home.table.component.html",
+        styleUrls: ["./home.table.component.css"],
         providers: [car_service_1.CarService]
     }),
     __metadata("design:paramtypes", [car_service_1.CarService])

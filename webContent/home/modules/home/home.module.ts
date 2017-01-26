@@ -7,6 +7,7 @@ import { HttpModule }    from '@angular/http';
 import { HomeComponent } from "./components/home/home.component";
 import { HomeNavbarComponent } from "./components/home-navbar/home.navbar.component";
 import { HomeTableComponent } from "./components/home-table/home.table.component";
+import { HomeCartileComponent } from "./components/home-cartile/home.cartile.component";
 
 @NgModule({
     imports : [
@@ -17,7 +18,8 @@ import { HomeTableComponent } from "./components/home-table/home.table.component
     declarations : [
       HomeComponent,
       HomeNavbarComponent,
-      HomeTableComponent
+      HomeTableComponent,
+      HomeCartileComponent
     ],
     providers: [ CarService ],
     bootstrap : [HomeComponent]

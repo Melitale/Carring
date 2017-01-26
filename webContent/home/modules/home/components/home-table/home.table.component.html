@@ -1,11 +1,4 @@
 <h1>Car table</h1>
-<table class="table table-striped">
-    <tr>
-        <th>Brand</th>
-        <th>Year</th>
-    </tr>
-    <tr *ngFor="let car of cars">
-        <td>{{car.brand}}</td>
-        <td>{{car.date}}</td>
-    </tr>
-</table>
+<div class="col-md-12" id="car-table">
+    <home-cartile *ngFor="let car of cars" [car]="car"></home-cartile>
+</div>

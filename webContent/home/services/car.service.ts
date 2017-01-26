@@ -5,8 +5,6 @@ import {Car} from "../models/car";
 
 import "rxjs/add/operator/toPromise"
 
-import { CARS } from "../mocks/car-mocks"
-
 @Injectable()
 export class CarService{
 
@@ -14,11 +12,7 @@ export class CarService{
 
     private getCarsPath = 'http://localhost:8080/rest/api/car/all';
 
-    getCars() : Promise<Car[]>{
-        return Promise.resolve(CARS);
-    }
-
-    getCarsFromServer() : Promise<Car[]>{
+    getAllCars() : Promise<Car[]>{
         console.log("coming in");
         return this.http.get(this.getCarsPath)
             .toPromise()

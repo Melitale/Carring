@@ -13,6 +13,7 @@ var http_1 = require("@angular/http");
 var home_component_1 = require("./components/home/home.component");
 var home_navbar_component_1 = require("./components/home-navbar/home.navbar.component");
 var home_table_component_1 = require("./components/home-table/home.table.component");
+var home_cartile_component_1 = require("./components/home-cartile/home.cartile.component");
 var HomeModule = (function () {
     function HomeModule() {
     }
@@ -28,7 +29,8 @@ HomeModule = __decorate([
         declarations: [
             home_component_1.HomeComponent,
             home_navbar_component_1.HomeNavbarComponent,
-            home_table_component_1.HomeTableComponent
+            home_table_component_1.HomeTableComponent,
+            home_cartile_component_1.HomeCartileComponent
         ],
         providers: [car_service_1.CarService],
         bootstrap: [home_component_1.HomeComponent]
