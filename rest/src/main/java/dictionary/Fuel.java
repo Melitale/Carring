@@ -5,7 +5,7 @@ public class Fuel {
 	public static String PETROL = "95";
 	public static String GAS = "Gaz";
 	
-	public Fuel(){
+	private Fuel(){
 		
 	}
 }

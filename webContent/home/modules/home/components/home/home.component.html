@@ -1,7 +1,7 @@
 <div class="container main-content">
     <home-navbar></home-navbar>
-    <home-searcher></home-searcher>
-    <home-table></home-table>
+    <home-searcher (dateEmiter)="dateEmiter($event)" (cityEmiter)="cityEmiter($event)"></home-searcher>
+    <home-table [dateRange]="dateRange" [city]="city"></home-table>
     <h1>Home page</h1>
     <h2>All components goes below</h2>
 </div>

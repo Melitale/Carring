@@ -9,6 +9,14 @@ var core_1 = require("@angular/core");
 var HomeComponent = (function () {
     function HomeComponent() {
     }
+    HomeComponent.prototype.dateEmiter = function (dateRange) {
+        console.log("Date");
+        this.dateRange = dateRange;
+    };
+    HomeComponent.prototype.cityEmiter = function (city) {
+        console.log(city);
+        this.city = city;
+    };
     return HomeComponent;
 }());
 HomeComponent = __decorate([

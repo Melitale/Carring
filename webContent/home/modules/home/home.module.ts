@@ -1,5 +1,4 @@
 import { NgModule } from "@angular/core";
-import { CarService } from "../../services/car.service";
 import { BrowserModule } from "@angular/platform-browser"
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HttpModule, JsonpModule }    from '@angular/http';
@@ -27,7 +26,6 @@ import { HomeSearcherComponent } from "./components/home-searcher/home.searcher.
       HomeCartileComponent,
       HomeSearcherComponent
     ],
-    providers: [ CarService ],
     bootstrap : [HomeComponent]
 })
 

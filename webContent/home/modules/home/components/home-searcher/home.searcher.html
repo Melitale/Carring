@@ -5,7 +5,7 @@
     <div class="col-md-4">
         <div class="form-group">
             <label for="city">Wpisz miasto</label>
-            <input type="text" class="form-control" id="city" placeholder="Gdańsk" />
+            <input type="text" class="form-control" [(ngModel)]="cityModel" id="city" placeholder="Gdańsk" />
         </div>
     </div>
     <div class="col-md-4">
@@ -30,7 +30,15 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6 col-md-offset-3">
-        <a class="btn btn-primary col-md-12" id="searchButton">Szukaj</a>
+    <div class="col-md-12" *ngIf="error">
+        <div class="col-md-8 col-md-offset-2" id="searchError">
+            <p>{{cityError}}</p>
+            <p>{{dateError}}</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-3">
+            <a class="btn btn-primary col-md-12" id="searchButton" (click)="search()">Szukaj</a>
+        </div>
     </div>
 </div>

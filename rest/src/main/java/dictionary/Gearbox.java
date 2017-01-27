@@ -4,5 +4,5 @@ public class Gearbox {
 	public static String MANUAL = "Manualna";
 	public static String AUTOMATE = "Automatyczna";
 	
-	public Gearbox(){}
+	private Gearbox(){}
 }

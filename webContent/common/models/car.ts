@@ -4,4 +4,6 @@ export class Car{
     fuel : string;
     gearbox : string;
     date : string;
+    seats : string;
+    door : string;
 }

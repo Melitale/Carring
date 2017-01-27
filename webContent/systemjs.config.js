@@ -12,6 +12,9 @@
         map: {
             // our app is within the home folder
             home: 'home',
+            models: 'common/models',
+            services: 'common/services',
+
             // angular bundles
             '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
             '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
@@ -31,6 +34,12 @@
         packages: {
             home: {
                 main: './home.js',
+                defaultExtension: 'js'
+            },
+            models: {
+                defaultExtension: 'js'
+            },
+            services: {
                 defaultExtension: 'js'
             },
             rxjs: {

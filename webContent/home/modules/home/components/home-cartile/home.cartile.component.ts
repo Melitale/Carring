@@ -1,6 +1,6 @@
 import { Component, Input } from "@angular/core";
 
-import { Car } from "../../../../models/car";
+import { Car } from "models/car";
 
 @Component({
     moduleId : module.id,

@@ -1,5 +1,7 @@
 import { Component } from "@angular/core";
 
+import { DateRange } from "models/dateRange";
+
 @Component({
     moduleId : module.id,
     selector : "home",
@@ -7,5 +9,16 @@ import { Component } from "@angular/core";
 })
 
 export class HomeComponent{
+    dateRange : DateRange;
+    city : string;
 
+    dateEmiter(dateRange : DateRange){
+        console.log("Date");
+        this.dateRange = dateRange;
+    }
+
+    cityEmiter(city : string){
+        console.log(city);
+        this.city = city;
+    }
 }

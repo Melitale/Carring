@@ -6,3 +6,12 @@
 #searchButton {
     margin-bottom: 10px;
 }
+
+#searchError {
+    padding: 10px;
+    background-color: #f9bbc0;
+    color: darkred;
+    border: 1px double darkred;
+    margin-bottom: 5px;
+    font-size: 14px;
+}

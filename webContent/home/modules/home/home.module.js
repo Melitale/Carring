@@ -6,7 +6,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var car_service_1 = require("../../services/car.service");
 var platform_browser_1 = require("@angular/platform-browser");
 var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
 var http_1 = require("@angular/http");
@@ -38,7 +37,6 @@ HomeModule = __decorate([
             home_cartile_component_1.HomeCartileComponent,
             home_searcher_component_1.HomeSearcherComponent
         ],
-        providers: [car_service_1.CarService],
         bootstrap: [home_component_1.HomeComponent]
     })
 ], HomeModule);
