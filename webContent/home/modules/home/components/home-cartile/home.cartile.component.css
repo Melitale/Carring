@@ -1,0 +1,27 @@
+#cartile {
+    padding: 5px;
+    background-color: lightgray;
+}
+
+#cartile-content {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+#cartile-photo {
+    padding: 0px;
+}
+
+#cartile-details {}
+
+
+/* spans */
+
+span.detail-title {
+    color: slategrey;
+}
+
+span.detail {
+    font-size: 14px;
+    font-weight: bold;
+}

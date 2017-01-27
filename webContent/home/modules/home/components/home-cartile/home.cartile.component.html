@@ -1,0 +1,45 @@
+<div class="col-md-6" id="cartile">
+    <div class="col-md-12" id="cartile-content">
+        <div class="col-md-7" id="cartile-photo">
+            <img src="http://placehold.it/300x200">
+        </div>
+        <div class="col-md-5" id="cartile-details">
+            <h4>{{car.brand}}</h4>
+            <span class="detail-title"><small>Silnik</small></span><br>
+            <span class="detail">{{car.engine}}</span><br>
+            <span class="detail-title"><small>Typ paliwa</small></span><br>
+            <span class="detail">{{car.fuel}}</span><br>
+            <span class="detail-title"><small>Skrzynia biegów</small></span><br>
+            <span class="detail">{{car.gearbox}}</span><br>
+            <span class="detail-title"><small>Data</small></span><br>
+            <span class="detail">{{car.date}} r.</span>
+        </div>
+        <div class="col-md-12" id="cartile-bottom-panel">
+            <div class="col-md-12">
+                <div class="col-md-3" id="car-price-title">
+                    <h5>Cena</h5>
+                </div>
+                <div class="col-md-3" id="car-bail-title">
+                    <h5>Kaucja</h5>
+                </div>
+                <div class="col-md-3" id="payment-type-title">
+                    <h5>Płatność</h5>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-3" id="car-price">
+                    <span>100 zł/dobę</span>
+                </div>
+                <div class="col-md-3" id="car-bail">
+                    <span>500 zł</span>
+                </div>
+                <div class="col-md-3" id="payment-type">
+                    <span><i class="fa fa-money" *ngIf="payment.cash"></i> <i class="fa fa-credit-card" *ngIf = "payment.creditCard"></i></span>
+                </div>
+                <div class="col-md-3">
+                    <a class="btn btn-primary">Rezerwuje</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

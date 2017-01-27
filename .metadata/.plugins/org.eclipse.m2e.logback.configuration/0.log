@@ -1,0 +1,31 @@
+2017-01-20 13:21:08,993 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: carring:rest:0.0.1-SNAPSHOT @ /Users/jakubr/Documents/workspace/Carring/Carring/rest/pom.xml.
+2017-01-20 13:21:08,993 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: carring:rest:0.0.1-SNAPSHOT @ /Users/jakubr/Documents/workspace/Carring/Carring/rest/pom.xml.
+2017-01-20 13:21:10,402 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:10,417 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jakubr/Documents/workspace/Carring/Carring/rest/src/main/resources
+2017-01-20 13:21:10,420 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:10,420 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jakubr/Documents/workspace/Carring/Carring/rest/src/test/resources
+2017-01-20 13:21:12,075 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:12,104 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jakubr/Documents/workspace/Carring/Carring/rest/src/main/resources
+2017-01-20 13:21:12,218 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: carring:rest:0.0.1-SNAPSHOT @ /Users/jakubr/Documents/workspace/Carring/Carring/rest/pom.xml.
+2017-01-20 13:21:12,219 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:12,220 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jakubr/Documents/workspace/Carring/Carring/rest/src/test/resources
+2017-01-20 13:21:13,307 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:13,308 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jakubr/Documents/workspace/Carring/Carring/rest/src/main/resources
+2017-01-20 13:21:13,310 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:13,311 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jakubr/Documents/workspace/Carring/Carring/rest/src/test/resources
+2017-01-20 13:21:32,940 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-01-20 13:21:33,436 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: carring:rest:0.0.1-SNAPSHOT @ /Users/jakubr/Documents/workspace/Carring/Carring/rest/pom.xml.
+2017-01-20 13:21:34,118 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /rest/src/main/java
+2017-01-20 13:21:34,119 [Worker-7] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /rest/src/test/java
+2017-01-20 13:21:35,994 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for rest
+2017-01-20 13:21:35,999 [Worker-7] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
+2017-01-20 13:21:36,430 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:36,431 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jakubr/Documents/workspace/Carring/Carring/rest/src/main/resources
+2017-01-20 13:21:36,434 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:36,434 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/jakubr/Documents/workspace/Carring/Carring/rest/src/test/resources
+2017-01-20 13:21:36,435 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of rest
+2017-01-20 13:21:36,436 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for rest
+2017-01-20 13:21:36,445 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-20 13:21:47,202 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-01-20 13:23:05,839 [Worker-8] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /Users/jakubr/Documents/workspace/Carring/Carring/.metadata/com.genuitec.eclipse.webclipse.livepreview/0/store
+2017-01-20 13:23:05,938 [Worker-8] INFO  j.exodus.env.EnvironmentImpl - Exodus environment created: /Users/jakubr/Documents/workspace/Carring/Carring/.metadata/com.genuitec.eclipse.webclipse.livepreview/1/store
