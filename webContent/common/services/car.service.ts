@@ -10,13 +10,21 @@ export class CarService{
 
     constructor(private http : Http){}
 
-    private getCarsPath = 'http://localhost:8080/rest/api/car/all';
+    private getCarPath = 'http://localhost:8080/rest/api/car/';
 
     getAllCars() : Promise<Car[]>{
         console.log("coming in");
-        return this.http.get(this.getCarsPath)
+        return this.http.get(this.getCarPath + "all")
             .toPromise()
             .then(response => response.json() as Car[])
+            .catch(this.handleError);
+    }
+
+    getCar(id : number) : Promise<Car>{
+        console.log(this.getCarPath + id);
+        return this.http.get(this.getCarPath + id)
+            .toPromise()
+            .then(response => response.json() as Car)
             .catch(this.handleError);
     }
 

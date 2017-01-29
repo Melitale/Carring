@@ -1,9 +1,0 @@
-<h1>Car table</h1>
-<div class="col-md-12" id="car-table">
-    <div class="col-md-10 col-md-offset-1 text-center" *ngIf="dateRange">
-        <div class="col-md-4">{{city}}</div>
-        <div class="col-md-4">Data od: {{dateService.printDate(dateRange.dateFrom)}}</div>
-        <div class="col-md-4">Data do: {{dateService.printDate(dateRange.dateTo)}}</div>
-    </div>
-    <home-cartile *ngFor="let car of cars" [car]="car"></home-cartile>
-</div>

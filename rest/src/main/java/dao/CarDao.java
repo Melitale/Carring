@@ -3,10 +3,13 @@ package dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import dictionary.Color;
 import dictionary.Door;
+import dictionary.Drive;
 import dictionary.Fuel;
 import dictionary.Gearbox;
 import dictionary.Seats;
+import dictionary.Type;
 import models.Car;
 
 public class CarDao {
@@ -22,16 +25,20 @@ public class CarDao {
 	}
 	
 	public Car getCar(int index){
-		return cars.get(index);
+		for(Car car : cars){
+			if(car.getId() == index){
+				return car;
+			}
+		}
+		
+		return new Car();
 	}
 	
 	private void populateList(){
-		this.cars.add(new Car("Opel", "1.9 TDI", Fuel.DIESEL, Gearbox.AUTOMATE, "1994", Seats.FIVE, Door.THREE));
-		this.cars.add(new Car("Audi", "1.6 TI", Fuel.PETROL, Gearbox.MANUAL, "2015", Seats.TWO, Door.FIVE));
-		this.cars.add(new Car("Ford", "1.3 TDI", Fuel.DIESEL, Gearbox.AUTOMATE, "2016", Seats.FOUR, Door.FIVE));
-		this.cars.add(new Car("Volvo", "2.0 TD", Fuel.DIESEL, Gearbox.MANUAL, "2014", Seats.FIVE, Door.THREE));
-		this.cars.add(new Car("Skoda", "1.9 TDI", Fuel.DIESEL, Gearbox.AUTOMATE, "2005", Seats.FIVE, Door.FIVE));
-		this.cars.add(new Car("Volkwagen", "1.8 TI", Fuel.PETROL, Gearbox.MANUAL, "2008", Seats.TWO, Door.THREE));
+		this.cars.add(new Car(0, "Audi", "A3", Type.HATCHBACK, "2015", 20000, Color.BLUE, Seats.FIVE, Door.THREE, "1.6", 130, 1500, Fuel.DIESEL, Gearbox.AUTOMATE, Drive.FRONT));
+		this.cars.add(new Car(1, "Opel", "Astra", Type.SEDAN, "2010", 100000, Color.GREEN, Seats.FIVE, Door.FIVE, "1.9", 110, 1500, Fuel.PETROL, Gearbox.MANUAL, Drive.FRONT));
+		this.cars.add(new Car(2, "Volkswagen", "Golf 6", Type.KOMBI, "2012", 120000, Color.BLACK, Seats.FIVE, Door.FIVE, "1.9", 150, 1500, Fuel.DIESEL, Gearbox.AUTOMATE, Drive.FRONT));
+		this.cars.add(new Car(3, "Mercedes-Benz", "ML", Type.OFF_ROAD, "2015", 100000, Color.BROWN, Seats.FIVE, Door.FIVE, "3.0", 180, 1500, Fuel.DIESEL, Gearbox.AUTOMATE, Drive.AUTO_4X4));
 	}
 	
 	

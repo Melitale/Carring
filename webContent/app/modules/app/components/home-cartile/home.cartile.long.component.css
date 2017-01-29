@@ -1,0 +1,30 @@
+#cartile {
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+#rental-detail {
+    background-color: #F2F2F2;
+    border: 1px solid darkgrey;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+#rental-detail div {
+    background-color: #F2F2F2;
+    padding: 5px;
+}
+
+li.green {
+    color: Green;
+}
+
+span.rental-detail {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a.car-name {
+    cursor: pointer;
+    color: darkslategrey;
+}

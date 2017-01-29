@@ -14,11 +14,18 @@ require("rxjs/add/operator/toPromise");
 var CarService = (function () {
     function CarService(http) {
         this.http = http;
-        this.getCarsPath = 'http://localhost:8080/rest/api/car/all';
+        this.getCarPath = 'http://localhost:8080/rest/api/car/';
     }
     CarService.prototype.getAllCars = function () {
         console.log("coming in");
-        return this.http.get(this.getCarsPath)
+        return this.http.get(this.getCarPath + "all")
+            .toPromise()
+            .then(function (response) { return response.json(); })
+            .catch(this.handleError);
+    };
+    CarService.prototype.getCar = function (id) {
+        console.log(this.getCarPath + id);
+        return this.http.get(this.getCarPath + id)
             .toPromise()
             .then(function (response) { return response.json(); })
             .catch(this.handleError);

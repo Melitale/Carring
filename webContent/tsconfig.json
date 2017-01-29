@@ -12,7 +12,9 @@
         "baseUrl": ".",
         "paths": {
             "models/*": ["common/models/*"],
-            "services/*": ["common/services/*"]
+            "services/*": ["common/services/*"],
+            "components/*": ["app/modules/app/components/*"],
+            "modules/*": ["app/modules/*"]
         }
     }
 }
