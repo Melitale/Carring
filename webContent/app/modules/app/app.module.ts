@@ -11,6 +11,7 @@ import { HomeNavbarComponent } from "./components/home-navbar/home.navbar.compon
 import { HomeTableComponent } from "./components/home-table/home.table.component";
 import { HomeCartileComponent } from "./components/home-cartile/home.cartile.component";
 import { HomeSearcherComponent } from "./components/home-searcher/home.searcher.component";
+import { HomeFooterComponent } from "./components/home-footer/home.footer.component";
 import { CarDetailComponent } from "./components/car/car.detail.component";
 
 import { APP_BASE_HREF } from '@angular/common';
@@ -32,6 +33,7 @@ import { APP_BASE_HREF } from '@angular/common';
       HomeTableComponent,
       HomeCartileComponent,
       HomeSearcherComponent,
+      HomeFooterComponent,
       CarDetailComponent
     ],
     bootstrap : [AppComponent],

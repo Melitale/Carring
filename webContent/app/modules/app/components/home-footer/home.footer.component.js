@@ -6,19 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var HomeNavbarComponent = (function () {
-    function HomeNavbarComponent() {
-        this.BrandName = "Carring";
+var HomeFooterComponent = (function () {
+    function HomeFooterComponent() {
     }
-    return HomeNavbarComponent;
+    return HomeFooterComponent;
 }());
-HomeNavbarComponent = __decorate([
+HomeFooterComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: "home-navbar",
-        templateUrl: "./home.navbar.component.html",
-        styleUrls: ["./home.navbar.component.css"]
+        selector: 'home-footer',
+        templateUrl: "./home.footer.component.html",
+        styleUrls: ["./home.footer.component.css"]
     })
-], HomeNavbarComponent);
-exports.HomeNavbarComponent = HomeNavbarComponent;
-//# sourceMappingURL=home.navbar.component.js.map
+], HomeFooterComponent);
+exports.HomeFooterComponent = HomeFooterComponent;
+//# sourceMappingURL=home.footer.component.js.map

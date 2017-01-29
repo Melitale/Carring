@@ -19,7 +19,7 @@ var HomeSearcherComponent = (function () {
         this.dateRange = new dateRange_1.DateRange();
         this.error = false;
         this.cityError = "Wpisz miasto!";
-        this.dateError = "Wpisz daty! Pamiętaj, data początkowa musi być wcześniejsza od daty poczatkowej.";
+        this.dateError = "Wpisz daty! Pamiętaj, data początkowa musi być wcześniejsza od daty końcowej.";
     }
     ;
     HomeSearcherComponent.prototype.search = function () {

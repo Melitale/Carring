@@ -62,5 +62,5 @@ export class HomeSearcherComponent{
     cityModel : string;
     error : any = false;
     cityError = "Wpisz miasto!";
-    dateError = "Wpisz daty! Pamiętaj, data początkowa musi być wcześniejsza od daty poczatkowej."
+    dateError = "Wpisz daty! Pamiętaj, data początkowa musi być wcześniejsza od daty końcowej."
 }

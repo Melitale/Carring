@@ -37,7 +37,6 @@ public class CarResource {
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getCar(@PathParam("id") int id){
-    	System.out.println(id);
     	GenericEntity<Car> generic = new GenericEntity<Car>(carDao.getCar(id)){};
 		return Response.ok()
 			.entity(generic)

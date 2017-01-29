@@ -1,0 +1,9 @@
+a.carring-nav {
+    color: darkslategrey;
+    cursor: pointer;
+}
+
+div.carring-nav {
+    background-color: #F4F5F0;
+    border-bottom: 1px solid grey;
+}

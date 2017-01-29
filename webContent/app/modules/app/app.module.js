@@ -17,6 +17,7 @@ var home_navbar_component_1 = require("./components/home-navbar/home.navbar.comp
 var home_table_component_1 = require("./components/home-table/home.table.component");
 var home_cartile_component_1 = require("./components/home-cartile/home.cartile.component");
 var home_searcher_component_1 = require("./components/home-searcher/home.searcher.component");
+var home_footer_component_1 = require("./components/home-footer/home.footer.component");
 var car_detail_component_1 = require("./components/car/car.detail.component");
 var common_1 = require("@angular/common");
 var AppModule = (function () {
@@ -42,6 +43,7 @@ AppModule = __decorate([
             home_table_component_1.HomeTableComponent,
             home_cartile_component_1.HomeCartileComponent,
             home_searcher_component_1.HomeSearcherComponent,
+            home_footer_component_1.HomeFooterComponent,
             car_detail_component_1.CarDetailComponent
         ],
         bootstrap: [app_component_1.AppComponent],
