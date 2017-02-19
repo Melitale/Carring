@@ -1,0 +1,87 @@
+<div class="col-md-12" *ngIf="!loading">
+    <div class="col-md-4">
+        <h1>{{car.brand}} {{car.model}}</h1>
+    </div>
+    <div class="col-md-2 col-md-offset-6">
+        <a class="btn btn-danger" (click)="goBack()"><i class="fa fa-close"></i> Powrót do listy</a>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6" id="car-photo">
+            <img src="http://placehold.it/500x400">
+        </div>
+        <div class="col-md-6" id="car-details">
+            <div class="col-md-6 car-detail">
+                <h4><small>Rok produkcji</small></h4>
+                <span class="detail"><b>{{car.date}} r.</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Przebieg</small></h4>
+                <span class="detail"><b>{{car.mileage}} km</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Typ</small></h4>
+                <span class="detail"><b>{{car.type}}</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Kolor</small></h4>
+                <span class="detail"><b>{{car.color}}</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Liczba miejsc</small></h4>
+                <span class="detail"><b>{{car.seats}}</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Liczba drzwi</small></h4>
+                <span class="detail"><b>{{car.door}}</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Silnik</small></h4>
+                <span class="detail"><b>{{car.engine}} l</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Paliwo</small></h4>
+                <span class="detail"><b>{{car.fuel}}</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Skrzynia biegów</small></h4>
+                <span class="detail"><b>{{car.gearbox}}</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Napęd</small></h4>
+                <span class="detail"><b>{{car.drive}}</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Moc</small></h4>
+                <span class="detail"><b>{{car.power}} KM</b></span>
+            </div>
+            <div class="col-md-6 car-detail">
+                <h4><small>Moment obrotowy</small></h4>
+                <span class="detail"><b>{{car.torque}} Nm</b></span>
+            </div>
+            <div class="col-md-12" id="accessory">
+                <h3>Akcesoria</h3>
+                <div class="col-md-6 accesory">
+                    <i class="fa fa-check"></i> Elektryczne lusterka
+                </div>
+                <div class="col-md-6 accesory">
+                    <i class="fa fa-check"></i> Elektryczne szyby
+                </div>
+                <div class="col-md-6 accesory">
+                    <i class="fa fa-check"></i> Nawigacja
+                </div>
+                <div class="col-md-6 accesory">
+                    <i class="fa fa-check"></i> Podgrzewane siedzenia
+                </div>
+                <div class="col-md-6 accesory">
+                    <i class="fa fa-check"></i> Dach panoramiczny
+                </div>
+                <div class="col-md-6 accesory">
+                    <i class="fa fa-check"></i> Bluetooth
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 text-center" *ngIf="loading">
+        Loading...
+    </div>

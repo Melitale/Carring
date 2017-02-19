@@ -1,0 +1,18 @@
+div.car-detail {
+    padding: 10px;
+    border: 0.2px solid grey;
+    background-color: #F2F2F2;
+    color: darkslategrey;
+}
+
+#accessory {
+    background-color: #F2FFED;
+    padding: 10px;
+    border: 0.2px solid grey;
+}
+
+div.accesory {
+    background-color: #F2FFED;
+    padding: 5px;
+    color: darkgreen;
+}

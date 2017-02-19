@@ -1,0 +1,44 @@
+<div class="col-md-12 searcher" id="searcher">
+    <div class="col-md-12 text-center">
+        <h2>Znajdź samochód dla siebie!</h2>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="city">Wpisz miasto</label>
+            <input type="text" class="form-control" [(ngModel)]="cityModel" id="city" placeholder="Gdańsk" />
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="dateFrom">Dostępny od daty</label>
+            <div class="input-group">
+                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="dateFromModel" ngbDatepicker #dateFrom="ngbDatepicker">
+                <div class="input-group-addon" (click)="dateFrom.toggle()">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label for="dateTo">Dostępny do daty</label>
+            <div class="input-group">
+                <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="dateToModel" ngbDatepicker #dateTo="ngbDatepicker">
+                <div class="input-group-addon" (click)="dateTo.toggle()">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12" *ngIf="error">
+        <div class="col-md-8 col-md-offset-2" id="searchError">
+            <p>{{cityError}}</p>
+            <p>{{dateError}}</p>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-3">
+            <a class="btn btn-primary col-md-12" id="searchButton" (click)="search()">Szukaj</a>
+        </div>
+    </div>
+</div>
