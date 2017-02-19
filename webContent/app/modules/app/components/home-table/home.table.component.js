@@ -25,7 +25,7 @@ var HomeTableComponent = (function () {
         });
     };
     HomeTableComponent.prototype.ngOnInit = function () {
-        this.getCars();
+        // this.getCars();
     };
     HomeTableComponent.prototype.ngOnChanges = function (changes) {
         for (var propertyName in changes) {

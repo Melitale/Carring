@@ -38,7 +38,7 @@ export class HomeTableComponent implements OnInit, OnChanges{
     }
 
     ngOnInit() : void {
-        this.getCars();
+        // this.getCars();
     }
 
     ngOnChanges(changes: {[propKey: string]: SimpleChange}){
